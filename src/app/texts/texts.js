@@ -1,9 +1,10 @@
-const title = "Titulo del emprendimiento";
-const email = "Email del emprendimiento";
+const title = "El arte de la almojabana";
+const email = "Correo.alexlog.trb@gmail.com";
 const mensajeWhatsApp = encodeURIComponent(
-    `¡Hola! Estoy muy interesado en tus productos de ${title} y me gustaría recibir más información sobre ellos. Espero poder hablar pronto contigo para aclarar algunas dudas. ¡Gracias!`
+    "¡Hola! Estoy interesado en conocer más sobre los productos de " + title + " y me gustaría obtener más información. ¡Gracias!"
 );
-const numeroWhatsApp = "Numero del emprendimiento";
+const numeroWhatsApp = "+573213534882"; // Incluido el prefijo +57
+
 const textos = {
     index: {
         title: title,
@@ -12,25 +13,24 @@ const textos = {
         title: title,
     },
     about: {
-        description1: "Descripción del emprendimiento parrafo uno",
-        description2: "Descripcion del emprendimiento parrafo dos"
+        description1: "En El arte de la almojabana, nos enorgullecemos de ofrecer productos tradicionales como almojábanas, pandeyucas, pandebonos, masato, kumis casero y crema de avena. Sabemos que cada detalle hace la diferencia, y nos esforzamos por brindar productos de calidad para deleitar tu paladar.",
     },
     contact: {
         whatsappLink: `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`,
         email: email
     },
     footer: {
-        slogan:{
-            p1: "slogan del emprendimiento parrafo uno",
-            p2: "slogan del emprendimiento parrafo dos"
+        slogan: {
+            p1: "Hace la diferencia.",
+            p2: ""
         },
-        address: "Dirección del emprendimiento",
+        address: "", // Información no proporcionada
         phone: numeroWhatsApp,
         email: email,
-        facebook: "https://www.facebook.com/",
-        instagram: "https://www.instagram.com/",
+        facebook: "https://www.facebook.com/profile.php?id=61565725179481", // Enlace específico de Facebook
+        instagram: "https://www.instagram.com/elartedelaalmojabana/", // Enlace específico de Instagram
         whatsappLink: `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`
     },
-
 };
+
 export default textos;
